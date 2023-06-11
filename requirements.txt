@@ -1,3 +1,5 @@
 uvicorn
 discord.py
 psycopg2-binary
+python-dotenv
+yaml
