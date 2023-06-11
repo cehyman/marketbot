@@ -1,1 +1,1 @@
-# tradingbot
+# marketbot
