@@ -1,5 +1,11 @@
 uvicorn
-discord.py
 psycopg2-binary
 python-dotenv
-yaml
+pandas
+
+# Discord
+discord.py
+
+# Steam
+steammarket
+steampy

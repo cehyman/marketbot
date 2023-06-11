@@ -2,7 +2,7 @@ import psycopg2
 
 #establishing the connection
 conn = psycopg2.connect(
-   database="marketbotdb", user='postgres', password='password', host='localhost', port= '5432'
+   database="marketbotdb", user='chyman', password='password', host='localhost', port= '5432'
 )
 #Creating a cursor object using the cursor() method
 cursor = conn.cursor()
