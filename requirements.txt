@@ -2,6 +2,7 @@ uvicorn
 psycopg2-binary
 python-dotenv
 pandas
+sqlalchemy
 
 # Discord
 discord.py

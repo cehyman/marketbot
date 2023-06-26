@@ -1,6 +1,6 @@
 import psycopg2
 
-from config.config import Config
+from marketbot.app.discord.config.config import Config
 cfg = Config()
 
 def connect():
