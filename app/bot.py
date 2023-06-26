@@ -4,8 +4,11 @@ import platform
 import os
 
 import discord
-from discord.ext import commands, tasks
+from discord.ext import commands
 from discord.ext.commands import Bot, Context
+
+from db.session import SessionLocal
+from models.item import Items
 
 # Load configs
 from config.config import Config
@@ -73,7 +76,7 @@ bot.logger = logger
 
 ### TODO ### ADD DB INITIALIZATION AND CONNECTION ### TODO ###
 async def init_db():
-    return
+    db = SessionLocal()
 
 bot.config = cfg
 
@@ -86,7 +89,7 @@ async def on_ready() -> None:
     bot.logger.info(f"Running on: {platform.system()} {platform.release()} ({os.name})")
     bot.logger.info("-------------------")
     # Set bot status
-    await bot.change_presence(activity=discord.Game("defrauding the American Government"))
+    await bot.change_presence(activity=discord.Game("the classics"))
 
 # Runs every time a command is executed
 @bot.event
